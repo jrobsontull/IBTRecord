@@ -51,7 +51,6 @@
             this.collectedCheckBox = new System.Windows.Forms.CheckBox();
             this.collectedLabel = new System.Windows.Forms.Label();
             this.calledDateLabel = new System.Windows.Forms.Label();
-            this.ibtCheckedCheckBox = new System.Windows.Forms.CheckBox();
             this.statusLabel = new System.Windows.Forms.Label();
             this.statusTxtBox = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Button();
@@ -270,21 +269,11 @@
             this.calledDateLabel.TabIndex = 17;
             this.calledDateLabel.Text = "Date:";
             // 
-            // ibtCheckedCheckBox
-            // 
-            this.ibtCheckedCheckBox.AutoSize = true;
-            this.ibtCheckedCheckBox.Location = new System.Drawing.Point(12, 577);
-            this.ibtCheckedCheckBox.Name = "ibtCheckedCheckBox";
-            this.ibtCheckedCheckBox.Size = new System.Drawing.Size(115, 22);
-            this.ibtCheckedCheckBox.TabIndex = 22;
-            this.ibtCheckedCheckBox.Text = "IBT Checked";
-            this.ibtCheckedCheckBox.UseVisualStyleBackColor = true;
-            // 
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
             this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusLabel.Location = new System.Drawing.Point(9, 602);
+            this.statusLabel.Location = new System.Drawing.Point(9, 584);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(54, 18);
             this.statusLabel.TabIndex = 23;
@@ -292,14 +281,14 @@
             // 
             // statusTxtBox
             // 
-            this.statusTxtBox.Location = new System.Drawing.Point(62, 599);
+            this.statusTxtBox.Location = new System.Drawing.Point(62, 581);
             this.statusTxtBox.Name = "statusTxtBox";
             this.statusTxtBox.Size = new System.Drawing.Size(210, 24);
             this.statusTxtBox.TabIndex = 22;
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(7, 629);
+            this.saveBtn.Location = new System.Drawing.Point(7, 611);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(142, 37);
             this.saveBtn.TabIndex = 24;
@@ -309,7 +298,7 @@
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(155, 629);
+            this.cancelBtn.Location = new System.Drawing.Point(155, 611);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(117, 37);
             this.cancelBtn.TabIndex = 25;
@@ -321,12 +310,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 678);
+            this.ClientSize = new System.Drawing.Size(284, 658);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.statusTxtBox);
             this.Controls.Add(this.statusLabel);
-            this.Controls.Add(this.ibtCheckedCheckBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ibtNumTxtBox);
             this.Controls.Add(this.ibtNumLabel);
@@ -381,7 +369,6 @@
         private System.Windows.Forms.TextBox collectedDateTxtBox;
         private System.Windows.Forms.CheckBox collectedCheckBox;
         private System.Windows.Forms.Label collectedLabel;
-        private System.Windows.Forms.CheckBox ibtCheckedCheckBox;
         private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.TextBox statusTxtBox;
         private System.Windows.Forms.Button saveBtn;

@@ -247,7 +247,6 @@ namespace IBT_Record
                         rowSelected.SubItems[5].Text = newEditForm.description;
                         rowSelected.SubItems[6].Text = newEditForm.requested;
                         rowSelected.SubItems[7].Text = newEditForm.ibtNum;
-                        rowSelected.SubItems[8].Text = newEditForm.ibtChecked;
                         rowSelected.SubItems[9].Text = newEditForm.called;
                         rowSelected.SubItems[10].Text = newEditForm.collected;
                     }
@@ -394,7 +393,7 @@ namespace IBT_Record
         // Customer Called Button
         private void customerCalledBtn_Click(object sender, EventArgs e)
         {
-            TableDisplay.SelectedItems[0].SubItems[8].Text = "Yes - " + DateTime.Now.ToShortDateString();
+            TableDisplay.SelectedItems[0].SubItems[9].Text = "Yes - " + DateTime.Now.ToShortDateString();
             TableDisplay.SelectedItems[0].Text = "Awaiting Collection";
             XUpdate();
             refreshButtonStates();
@@ -404,7 +403,7 @@ namespace IBT_Record
         // Collected Button
         private void collectedBtn_Click(object sender, EventArgs e)
         {
-            TableDisplay.SelectedItems[0].SubItems[9].Text = "Collected - " + DateTime.Now.ToShortDateString();
+            TableDisplay.SelectedItems[0].SubItems[10].Text = "Collected - " + DateTime.Now.ToShortDateString();
             TableDisplay.SelectedItems[0].Text = "Collected";
             XUpdate();
             refreshButtonStates();

@@ -26,10 +26,14 @@ namespace IBT_Record
 
         private void acceptBtn_Click(object sender, EventArgs e)
         {
-            if (initialsTxtBox.Text != String.Empty && passTxtBox.Text != String.Empty && passTxtBox.Text == "SVEN")
+            if (passTxtBox.Text != String.Empty && passTxtBox.Text == "SVEN")
             {
                 initials = initialsTxtBox.Text;
                 this.DialogResult = DialogResult.OK;
+            }
+            else if (passTxtBox.Text != "SVEN")
+            {
+                MessageBox.Show("Incorrect password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

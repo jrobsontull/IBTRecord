@@ -39,27 +39,30 @@
             // initialsTxtBox
             // 
             this.initialsTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.initialsTxtBox.Location = new System.Drawing.Point(82, 9);
+            this.initialsTxtBox.Location = new System.Drawing.Point(109, 11);
+            this.initialsTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.initialsTxtBox.Name = "initialsTxtBox";
-            this.initialsTxtBox.Size = new System.Drawing.Size(186, 21);
+            this.initialsTxtBox.Size = new System.Drawing.Size(247, 24);
             this.initialsTxtBox.TabIndex = 0;
             // 
             // initialsLabel
             // 
             this.initialsLabel.AutoSize = true;
             this.initialsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.initialsLabel.Location = new System.Drawing.Point(31, 9);
+            this.initialsLabel.Location = new System.Drawing.Point(41, 11);
+            this.initialsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.initialsLabel.Name = "initialsLabel";
-            this.initialsLabel.Size = new System.Drawing.Size(45, 15);
-            this.initialsLabel.TabIndex = 1;
+            this.initialsLabel.Size = new System.Drawing.Size(52, 18);
+            this.initialsLabel.TabIndex = 4;
             this.initialsLabel.Text = "Initials:";
             // 
             // acceptBtn
             // 
             this.acceptBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.acceptBtn.Location = new System.Drawing.Point(49, 60);
+            this.acceptBtn.Location = new System.Drawing.Point(65, 74);
+            this.acceptBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.acceptBtn.Name = "acceptBtn";
-            this.acceptBtn.Size = new System.Drawing.Size(87, 30);
+            this.acceptBtn.Size = new System.Drawing.Size(116, 37);
             this.acceptBtn.TabIndex = 2;
             this.acceptBtn.Text = "Confirm";
             this.acceptBtn.UseVisualStyleBackColor = true;
@@ -69,43 +72,47 @@
             // 
             this.passLabel.AutoSize = true;
             this.passLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passLabel.Location = new System.Drawing.Point(12, 33);
+            this.passLabel.Location = new System.Drawing.Point(16, 41);
+            this.passLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passLabel.Name = "passLabel";
-            this.passLabel.Size = new System.Drawing.Size(64, 15);
-            this.passLabel.TabIndex = 3;
+            this.passLabel.Size = new System.Drawing.Size(79, 18);
+            this.passLabel.TabIndex = 5;
             this.passLabel.Text = "Password:";
             // 
             // passTxtBox
             // 
             this.passTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passTxtBox.Location = new System.Drawing.Point(82, 33);
+            this.passTxtBox.Location = new System.Drawing.Point(109, 41);
+            this.passTxtBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passTxtBox.Name = "passTxtBox";
             this.passTxtBox.PasswordChar = '*';
-            this.passTxtBox.Size = new System.Drawing.Size(186, 21);
-            this.passTxtBox.TabIndex = 4;
+            this.passTxtBox.Size = new System.Drawing.Size(247, 24);
+            this.passTxtBox.TabIndex = 1;
             // 
             // cancelBtn
             // 
             this.cancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelBtn.Location = new System.Drawing.Point(142, 60);
+            this.cancelBtn.Location = new System.Drawing.Point(189, 74);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(87, 30);
-            this.cancelBtn.TabIndex = 5;
+            this.cancelBtn.Size = new System.Drawing.Size(116, 37);
+            this.cancelBtn.TabIndex = 3;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // SubwarehouseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 96);
+            this.ClientSize = new System.Drawing.Size(379, 118);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.passTxtBox);
             this.Controls.Add(this.passLabel);
             this.Controls.Add(this.acceptBtn);
             this.Controls.Add(this.initialsLabel);
             this.Controls.Add(this.initialsTxtBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SubwarehouseForm";
             this.Text = "Subwarehouse Check";
             this.ResumeLayout(false);

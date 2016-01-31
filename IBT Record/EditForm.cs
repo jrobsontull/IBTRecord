@@ -42,7 +42,10 @@ namespace IBT_Record
                     }
                     else
                     {
-                        MessageBox.Show("The call date field is not written in the correct form.\nExample of how it should be written: Yes - dd/mm/year");
+                        MessageBox.Show("The call date field is not written in the correct form.\nExample of how it should be written: Yes - dd/mm/year",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
                         calledDateTxtBox.Text = customer.customerCalled;
                     }
                 }
@@ -83,9 +86,6 @@ namespace IBT_Record
                     collectedDateTxtBox.Text = customer.collected;
                 }
             }
-
-            if (customer.ibtChecked != null && customer.ibtChecked.ToUpper() == "CHECKED")
-                ibtCheckedCheckBox.Checked = true;
         }
 
         // Variables to pass to main form
@@ -137,16 +137,6 @@ namespace IBT_Record
             {
                 if (collectedCheckBox.Checked && collectedDateTxtBox.Text != String.Empty && collectedDateTxtBox.Text != null)
                     return "Collected - " + collectedDateTxtBox.Text;
-                else
-                    return String.Empty;
-            }
-        }
-        public string ibtChecked
-        {
-            get
-            {
-                if (ibtCheckedCheckBox.Checked)
-                    return "Checked";
                 else
                     return String.Empty;
             }
