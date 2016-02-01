@@ -191,12 +191,13 @@ namespace IBT_Record
                     var listViewItem = new ListViewItem(customerToAdd);
                     listViewItem.Font = new Font(listViewItem.Font, FontStyle.Regular);
                     TableDisplay.Items.Insert(0, listViewItem); // use of insert function to put to top of list
+
+                    XUpdate();
+                    TableDisplay.Items[0].Selected = true; // select new IBT
+                    TableDisplay.Select();
                 }
             }
 
-            XUpdate();
-            TableDisplay.Items[0].Selected = true; // select new IBT
-            TableDisplay.Select();
         }
 
         // Edit Entry Button
