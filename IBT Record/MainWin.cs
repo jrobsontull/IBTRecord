@@ -45,6 +45,10 @@ namespace IBT_Record
                 if(File.Exists(propertiesFile))
                 {
                     // Read properties
+                    using (StreamReader sRead = new StreamReader(propertiesFile))
+                    {
+                        c = JsonConvert.DeserializeObject<config>(sRead.ReadToEnd());
+                    }
                 }
                 else
                 {
@@ -76,6 +80,8 @@ namespace IBT_Record
                         }
                     }
                 }
+
+                this.Text = String.Format("{0} - ({1})", this.Text, c.storeNumber); // change form title
             }
             catch(Exception ex)
             {

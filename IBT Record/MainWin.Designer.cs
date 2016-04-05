@@ -74,13 +74,13 @@
             this.TableDisplay.FullRowSelect = true;
             this.TableDisplay.GridLines = true;
             this.TableDisplay.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.TableDisplay.Location = new System.Drawing.Point(126, 10);
-            this.TableDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.TableDisplay.Location = new System.Drawing.Point(168, 12);
+            this.TableDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TableDisplay.MultiSelect = false;
             this.TableDisplay.Name = "TableDisplay";
             this.TableDisplay.ShowGroups = false;
             this.TableDisplay.ShowItemToolTips = true;
-            this.TableDisplay.Size = new System.Drawing.Size(691, 493);
+            this.TableDisplay.Size = new System.Drawing.Size(920, 606);
             this.TableDisplay.TabIndex = 0;
             this.TableDisplay.UseCompatibleStateImageBehavior = false;
             this.TableDisplay.View = System.Windows.Forms.View.Details;
@@ -154,10 +154,10 @@
             // newIBTBtn
             // 
             this.newIBTBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newIBTBtn.Location = new System.Drawing.Point(9, 10);
-            this.newIBTBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.newIBTBtn.Location = new System.Drawing.Point(12, 12);
+            this.newIBTBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.newIBTBtn.Name = "newIBTBtn";
-            this.newIBTBtn.Size = new System.Drawing.Size(112, 37);
+            this.newIBTBtn.Size = new System.Drawing.Size(149, 46);
             this.newIBTBtn.TabIndex = 2;
             this.newIBTBtn.Text = "New IBT";
             this.newIBTBtn.UseVisualStyleBackColor = true;
@@ -167,10 +167,10 @@
             // 
             this.editBtn.Enabled = false;
             this.editBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editBtn.Location = new System.Drawing.Point(8, 328);
-            this.editBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.editBtn.Location = new System.Drawing.Point(11, 404);
+            this.editBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.editBtn.Name = "editBtn";
-            this.editBtn.Size = new System.Drawing.Size(112, 37);
+            this.editBtn.Size = new System.Drawing.Size(149, 46);
             this.editBtn.TabIndex = 3;
             this.editBtn.Text = "Edit";
             this.editBtn.UseVisualStyleBackColor = true;
@@ -180,10 +180,10 @@
             // 
             this.requestedBtn.Enabled = false;
             this.requestedBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.requestedBtn.Location = new System.Drawing.Point(9, 52);
-            this.requestedBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.requestedBtn.Location = new System.Drawing.Point(12, 64);
+            this.requestedBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.requestedBtn.Name = "requestedBtn";
-            this.requestedBtn.Size = new System.Drawing.Size(112, 37);
+            this.requestedBtn.Size = new System.Drawing.Size(149, 46);
             this.requestedBtn.TabIndex = 4;
             this.requestedBtn.Text = "Requested";
             this.requestedBtn.UseVisualStyleBackColor = true;
@@ -193,10 +193,10 @@
             // 
             this.addIBTNumBtn.Enabled = false;
             this.addIBTNumBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addIBTNumBtn.Location = new System.Drawing.Point(9, 94);
-            this.addIBTNumBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.addIBTNumBtn.Location = new System.Drawing.Point(12, 116);
+            this.addIBTNumBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addIBTNumBtn.Name = "addIBTNumBtn";
-            this.addIBTNumBtn.Size = new System.Drawing.Size(112, 37);
+            this.addIBTNumBtn.Size = new System.Drawing.Size(149, 46);
             this.addIBTNumBtn.TabIndex = 5;
             this.addIBTNumBtn.Text = "Add IBT Number";
             this.addIBTNumBtn.UseVisualStyleBackColor = true;
@@ -206,10 +206,10 @@
             // 
             this.customerCalledBtn.Enabled = false;
             this.customerCalledBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerCalledBtn.Location = new System.Drawing.Point(9, 136);
-            this.customerCalledBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.customerCalledBtn.Location = new System.Drawing.Point(12, 167);
+            this.customerCalledBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.customerCalledBtn.Name = "customerCalledBtn";
-            this.customerCalledBtn.Size = new System.Drawing.Size(112, 37);
+            this.customerCalledBtn.Size = new System.Drawing.Size(149, 46);
             this.customerCalledBtn.TabIndex = 6;
             this.customerCalledBtn.Text = "Customer Called";
             this.customerCalledBtn.UseVisualStyleBackColor = true;
@@ -219,10 +219,10 @@
             // 
             this.collectedBtn.Enabled = false;
             this.collectedBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.collectedBtn.Location = new System.Drawing.Point(9, 179);
-            this.collectedBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.collectedBtn.Location = new System.Drawing.Point(12, 220);
+            this.collectedBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.collectedBtn.Name = "collectedBtn";
-            this.collectedBtn.Size = new System.Drawing.Size(112, 54);
+            this.collectedBtn.Size = new System.Drawing.Size(149, 66);
             this.collectedBtn.TabIndex = 7;
             this.collectedBtn.Text = "Mark as Collected";
             this.collectedBtn.UseVisualStyleBackColor = true;
@@ -232,10 +232,10 @@
             // 
             this.subwarehouseBtn.Enabled = false;
             this.subwarehouseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subwarehouseBtn.Location = new System.Drawing.Point(9, 411);
-            this.subwarehouseBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.subwarehouseBtn.Location = new System.Drawing.Point(12, 506);
+            this.subwarehouseBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subwarehouseBtn.Name = "subwarehouseBtn";
-            this.subwarehouseBtn.Size = new System.Drawing.Size(112, 48);
+            this.subwarehouseBtn.Size = new System.Drawing.Size(149, 59);
             this.subwarehouseBtn.TabIndex = 8;
             this.subwarehouseBtn.Text = "Subwarehouse Check";
             this.subwarehouseBtn.UseVisualStyleBackColor = true;
@@ -245,20 +245,19 @@
             // 
             this.manageLabel.AutoSize = true;
             this.manageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageLabel.Location = new System.Drawing.Point(8, 311);
-            this.manageLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.manageLabel.Location = new System.Drawing.Point(11, 383);
             this.manageLabel.Name = "manageLabel";
-            this.manageLabel.Size = new System.Drawing.Size(84, 15);
+            this.manageLabel.Size = new System.Drawing.Size(98, 18);
             this.manageLabel.TabIndex = 10;
             this.manageLabel.Text = "Management:";
             // 
             // printBtn
             // 
             this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printBtn.Location = new System.Drawing.Point(8, 370);
-            this.printBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.printBtn.Location = new System.Drawing.Point(11, 455);
+            this.printBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.printBtn.Name = "printBtn";
-            this.printBtn.Size = new System.Drawing.Size(112, 37);
+            this.printBtn.Size = new System.Drawing.Size(149, 46);
             this.printBtn.TabIndex = 11;
             this.printBtn.Text = "Print";
             this.printBtn.UseVisualStyleBackColor = true;
@@ -268,9 +267,9 @@
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(11, -4);
+            this.menuStrip1.Location = new System.Drawing.Point(15, -5);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(202, 24);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
@@ -279,10 +278,10 @@
             // 
             this.deleteIBTBtn.Enabled = false;
             this.deleteIBTBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteIBTBtn.Location = new System.Drawing.Point(9, 465);
-            this.deleteIBTBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.deleteIBTBtn.Location = new System.Drawing.Point(12, 572);
+            this.deleteIBTBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteIBTBtn.Name = "deleteIBTBtn";
-            this.deleteIBTBtn.Size = new System.Drawing.Size(112, 37);
+            this.deleteIBTBtn.Size = new System.Drawing.Size(149, 46);
             this.deleteIBTBtn.TabIndex = 13;
             this.deleteIBTBtn.Text = "Delete IBT";
             this.deleteIBTBtn.UseVisualStyleBackColor = true;
@@ -292,10 +291,10 @@
             // 
             this.addNoteBtn.Enabled = false;
             this.addNoteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addNoteBtn.Location = new System.Drawing.Point(9, 237);
-            this.addNoteBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.addNoteBtn.Location = new System.Drawing.Point(12, 292);
+            this.addNoteBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addNoteBtn.Name = "addNoteBtn";
-            this.addNoteBtn.Size = new System.Drawing.Size(112, 37);
+            this.addNoteBtn.Size = new System.Drawing.Size(149, 46);
             this.addNoteBtn.TabIndex = 14;
             this.addNoteBtn.Text = "Add/Edit Note";
             this.addNoteBtn.UseVisualStyleBackColor = true;
@@ -303,10 +302,10 @@
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(825, 512);
+            this.ClientSize = new System.Drawing.Size(1100, 630);
             this.Controls.Add(this.addNoteBtn);
             this.Controls.Add(this.deleteIBTBtn);
             this.Controls.Add(this.printBtn);
@@ -323,7 +322,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "MainWindow";
             this.Text = "IBT Record";

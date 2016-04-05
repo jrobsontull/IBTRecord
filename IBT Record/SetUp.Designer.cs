@@ -126,6 +126,7 @@
             this.initialsTxtBox.Name = "initialsTxtBox";
             this.initialsTxtBox.Size = new System.Drawing.Size(99, 24);
             this.initialsTxtBox.TabIndex = 7;
+            this.initialsTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SetUp
             // 

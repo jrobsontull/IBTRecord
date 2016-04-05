@@ -27,9 +27,25 @@ namespace IBT_Record
         
         private void confirmBtn_Click(object sender, EventArgs e)
         {
-            storeNumber = Convert.ToInt16(storeNum.Value);
-            initials = initialsTxtBox.Text;
-            this.DialogResult = DialogResult.OK;
+            // Error checking
+            if (initialsTxtBox.Text == String.Empty || initialsTxtBox.Text == null)
+            {
+                MessageBox.Show("You need to fill in the initials of the person who is setting up this application.",
+                    "Missing Information",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                // Confirmation
+                DialogResult dRes = MessageBox.Show("Are you sure that the details are correct?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                if (dRes == DialogResult.OK)
+                {
+                    storeNumber = Convert.ToInt16(storeNum.Value);
+                    initials = initialsTxtBox.Text;
+                    this.DialogResult = DialogResult.OK;
+                }
+            }
         }
     }
 }

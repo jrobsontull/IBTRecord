@@ -52,16 +52,8 @@ D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\I
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Release\IBT Record.exe
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Release\IBT Record.pdb
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT Record.csprojResolveAssemblyReference.cache
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.AddIBTNumForm.resources
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.AddNoteForm.resources
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.DeleteIBT.resources
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.EditForm.resources
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.MainWindow.resources
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.NewIBTForm.resources
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.Properties.Resources.resources
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.RequestedForm.resources
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.SubwarehouseForm.resources
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT Record.csproj.GenerateResource.Cache
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Release\Newtonsoft.Json.dll
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Release\Newtonsoft.Json.xml
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Release\IBT_Record.SetUp.resources

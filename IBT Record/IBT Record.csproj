@@ -133,23 +133,8 @@
     <Compile Include="SubwarehouseForm.Designer.cs">
       <DependentUpon>SubwarehouseForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddIBTNumForm.resx">
-      <DependentUpon>AddIBTNumForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddNoteForm.resx">
-      <DependentUpon>AddNoteForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteIBT.resx">
-      <DependentUpon>DeleteIBT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditForm.resx">
-      <DependentUpon>EditForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewIBTForm.resx">
-      <DependentUpon>NewIBTForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,15 +146,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RequestedForm.resx">
-      <DependentUpon>RequestedForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SetUp.resx">
-      <DependentUpon>SetUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubwarehouseForm.resx">
-      <DependentUpon>SubwarehouseForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
