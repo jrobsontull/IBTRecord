@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
+using System.Reflection;
+
+using Newtonsoft.Json;
 
 namespace IBT_Record
 {
@@ -21,11 +24,65 @@ namespace IBT_Record
 
         // GLOBALS
         string fileLocation = AppDomain.CurrentDomain.BaseDirectory + "Database_IBT.xml";
+        string propertiesFile = AppDomain.CurrentDomain.BaseDirectory + "properties.json";
+        config c = new config();
         
+        public class config
+        {
+            public int storeNumber { get; set; }
+            public string setUpBy { get; set; }
+            public string version { get; set; }
+            public DateTime creationDate { get; set; }
+            public string creationTime { get; set; }
+        }
 
         // Load in table data
         private void MainWindow_Load(object sender, EventArgs e)
         {
+            // First time set up & read properties
+            try
+            {
+                if(File.Exists(propertiesFile))
+                {
+                    // Read properties
+                }
+                else
+                {
+                    // Does not exist so initialise first time set up
+                    using (SetUp setUpForm = new SetUp())
+                    {
+                        DialogResult dResult = setUpForm.ShowDialog();
+                        if (dResult == DialogResult.OK)
+                        {
+                            c.storeNumber = setUpForm.storeNumber;
+                            c.setUpBy = setUpForm.initials;
+                            c.version = setUpForm.ver;
+                            c.creationDate = DateTime.Today;
+                            c.creationTime = DateTime.Now.TimeOfDay.ToString();
+
+                            using(StreamWriter sWrite = new StreamWriter(propertiesFile))
+                            {
+                                sWrite.Write(JsonConvert.SerializeObject(c));
+                            }
+                        }
+                        else
+                        {
+                            // Exit application
+                            MessageBox.Show("Can not load without first following the initial set-up procedure. Please restart and try again.",
+                                "Failed to Load",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            System.Windows.Forms.Application.Exit();
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "An Error Occurred", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Attempt load of XML data
             try
             {
                 if (File.Exists(fileLocation)) 
