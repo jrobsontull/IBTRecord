@@ -16,7 +16,7 @@ namespace IBT_Record
         // GLOBALS
         public int storeNumber;
         public string initials;
-        public string ver = Assembly.GetEntryAssembly().GetName().Version.ToString().Substring(0, 3);
+        public string ver = Assembly.GetEntryAssembly().GetName().Version.ToString().Substring(0, 5);
 
         public SetUp()
         {

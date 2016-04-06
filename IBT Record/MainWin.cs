@@ -494,7 +494,7 @@ namespace IBT_Record
         // Delete IBT Button
         private void deleteIBTBtn_Click(object sender, EventArgs e)
         {
-            using (DeleteIBT delIBTForm = new DeleteIBT())
+            using (DeleteIBT delIBTForm = new DeleteIBT(c.storeNumber.ToString()))
             {
                 DialogResult dResult1 = delIBTForm.ShowDialog();
                 if (dResult1 == DialogResult.OK)

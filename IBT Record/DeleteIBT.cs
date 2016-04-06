@@ -12,14 +12,17 @@ namespace IBT_Record
 {
     public partial class DeleteIBT : Form
     {
-        public DeleteIBT()
+        private string password;
+
+        public DeleteIBT(string pass)
         {
             InitializeComponent();
+            password = pass;
         }
 
         private void confirmBtn_Click(object sender, EventArgs e)
         {
-            if (passTxtBox.Text == "36")
+            if (passTxtBox.Text == password)
             {
                 this.DialogResult = DialogResult.OK;
             }
