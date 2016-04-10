@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("IBT Record")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Quirky Dragon Technologies")]
 [assembly: AssemblyProduct("IBT Record")]
-[assembly: AssemblyCopyright("Copyright © JRT 2016")]
+[assembly: AssemblyCopyright("Copyright © Quirky Dragon Technologies 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
