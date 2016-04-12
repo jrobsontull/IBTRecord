@@ -332,15 +332,21 @@ namespace IBT_Record
         // Print Button
         private void printBtn_Click(object sender, EventArgs e)
         {
-            ListViewPrinter lPrinter = new ListViewPrinter();
-            lPrinter.ListView = TableDisplay;
-            // Formatting
-            lPrinter.DefaultPageSettings.Landscape = true;
-            lPrinter.Header = "IBT Record - " + DateTime.Now.ToShortDateString();
-            lPrinter.HeaderFormat.BackgroundColor = Color.White;
-            lPrinter.HeaderFormat.TextColor = Color.Black;
-            lPrinter.ListGridColor = Color.Gray;
-            lPrinter.PrintWithDialog();
+            using (PrintOptions pOption = new PrintOptions(TableDisplay))
+            {
+                pOption.ShowDialog();
+
+                //ListViewPrinter lPrinter = new ListViewPrinter();
+                //lPrinter.ListView = TableDisplay;
+                //// Formatting
+                //lPrinter.DefaultPageSettings.Landscape = true;
+                //lPrinter.Header = "IBT Record - " + DateTime.Now.ToShortDateString();
+                //lPrinter.HeaderFormat.BackgroundColor = Color.White;
+                //lPrinter.HeaderFormat.TextColor = Color.Black;
+                //lPrinter.ListGridColor = Color.Gray;
+                //lPrinter.PrintWithDialog();
+            }
+            
         }
 
         // Button Access Control
