@@ -32,11 +32,11 @@
             this.printCompletedBtn = new System.Windows.Forms.Button();
             this.printUncompleteBtn = new System.Windows.Forms.Button();
             this.dateGroupBox = new System.Windows.Forms.GroupBox();
-            this.fromDate = new System.Windows.Forms.DateTimePicker();
-            this.toDate = new System.Windows.Forms.DateTimePicker();
-            this.fromLabel = new System.Windows.Forms.Label();
-            this.toLabel = new System.Windows.Forms.Label();
             this.printDateBtn = new System.Windows.Forms.Button();
+            this.toLabel = new System.Windows.Forms.Label();
+            this.fromLabel = new System.Windows.Forms.Label();
+            this.toDate = new System.Windows.Forms.DateTimePicker();
+            this.fromDate = new System.Windows.Forms.DateTimePicker();
             this.dateGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,38 +84,6 @@
             this.dateGroupBox.TabStop = false;
             this.dateGroupBox.Text = "Print Date Range";
             // 
-            // fromDate
-            // 
-            this.fromDate.Location = new System.Drawing.Point(51, 20);
-            this.fromDate.Name = "fromDate";
-            this.fromDate.Size = new System.Drawing.Size(215, 21);
-            this.fromDate.TabIndex = 0;
-            // 
-            // toDate
-            // 
-            this.toDate.Location = new System.Drawing.Point(51, 47);
-            this.toDate.Name = "toDate";
-            this.toDate.Size = new System.Drawing.Size(215, 21);
-            this.toDate.TabIndex = 1;
-            // 
-            // fromLabel
-            // 
-            this.fromLabel.AutoSize = true;
-            this.fromLabel.Location = new System.Drawing.Point(6, 20);
-            this.fromLabel.Name = "fromLabel";
-            this.fromLabel.Size = new System.Drawing.Size(39, 15);
-            this.fromLabel.TabIndex = 2;
-            this.fromLabel.Text = "From:";
-            // 
-            // toLabel
-            // 
-            this.toLabel.AutoSize = true;
-            this.toLabel.Location = new System.Drawing.Point(21, 47);
-            this.toLabel.Name = "toLabel";
-            this.toLabel.Size = new System.Drawing.Size(24, 15);
-            this.toLabel.TabIndex = 3;
-            this.toLabel.Text = "To:";
-            // 
             // printDateBtn
             // 
             this.printDateBtn.Location = new System.Drawing.Point(183, 74);
@@ -125,9 +93,41 @@
             this.printDateBtn.Text = "Print";
             this.printDateBtn.UseVisualStyleBackColor = true;
             // 
+            // toLabel
+            // 
+            this.toLabel.AutoSize = true;
+            this.toLabel.Location = new System.Drawing.Point(21, 47);
+            this.toLabel.Name = "toLabel";
+            this.toLabel.Size = new System.Drawing.Size(30, 18);
+            this.toLabel.TabIndex = 3;
+            this.toLabel.Text = "To:";
+            // 
+            // fromLabel
+            // 
+            this.fromLabel.AutoSize = true;
+            this.fromLabel.Location = new System.Drawing.Point(6, 20);
+            this.fromLabel.Name = "fromLabel";
+            this.fromLabel.Size = new System.Drawing.Size(48, 18);
+            this.fromLabel.TabIndex = 2;
+            this.fromLabel.Text = "From:";
+            // 
+            // toDate
+            // 
+            this.toDate.Location = new System.Drawing.Point(51, 47);
+            this.toDate.Name = "toDate";
+            this.toDate.Size = new System.Drawing.Size(215, 24);
+            this.toDate.TabIndex = 1;
+            // 
+            // fromDate
+            // 
+            this.fromDate.Location = new System.Drawing.Point(51, 20);
+            this.fromDate.Name = "fromDate";
+            this.fromDate.Size = new System.Drawing.Size(215, 24);
+            this.fromDate.TabIndex = 0;
+            // 
             // PrintOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(296, 183);
             this.Controls.Add(this.dateGroupBox);

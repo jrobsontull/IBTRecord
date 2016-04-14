@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+//using System.IO;
 
 namespace IBT_Record
 {
     public partial class PrintOptions : Form
     {
-        public static ListView raw = new ListView();
+        private ListView raw = new ListView();
 
         public PrintOptions(ListView rawData)
         {
@@ -22,7 +23,7 @@ namespace IBT_Record
             raw = rawData;
         }
 
-        // DEEP COPY METHOD - needed for ListViewPrinter - very slow to dispose of clone
+        // DEEP COPY METHOD - needed for ListViewPrinter
         private ListView generateEmptyClone(ListView toClone)
         {
             ListView newCopy = new ListView();
@@ -34,8 +35,28 @@ namespace IBT_Record
                     propInfo.SetValue(newCopy, propToClone.GetValue(toClone, null));
             }
 
+            foreach (ColumnHeader head in toClone.Columns)
+            {
+                newCopy.Columns.Add((ColumnHeader)head.Clone());
+            }
+
             return newCopy;
         }
+
+        // DEBUGGING
+        //private void propPrinter(string fileLoc, ListView l)
+        //{
+        //    string s = String.Empty;
+        //    foreach (var prop in l.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public))
+        //    {
+        //        if (prop.GetValue(l, null) != null)
+        //            s += (prop.Name + " = " + prop.GetValue(l, null).ToString() + Environment.NewLine);
+        //    }
+        //    using (StreamWriter sWr = new StreamWriter(fileLoc))
+        //    {
+        //        sWr.Write(s);
+        //    }
+        //}
 
         private void printAllBtn_Click(object sender, EventArgs e)
         {
@@ -52,27 +73,24 @@ namespace IBT_Record
             lPrinter.HeaderFormat.BackgroundColor = Color.White;
             lPrinter.HeaderFormat.TextColor = Color.Black;
             lPrinter.ListGridColor = Color.Gray;
-            //lPrinter.PrintWithDialog();
+            //lPrinter.PrintWithDialog(); - introduce print dialog tick
             lPrinter.PrintPreview();
         }
 
         private void printCompletedBtn_Click(object sender, EventArgs e)
         {
             ListView result = generateEmptyClone(raw);
-            MessageBox.Show(result.Width.ToString());
-
-            result.Items.Clear();
             
             for (int i = 0; i < raw.Items.Count; i++)
             {
                 if (raw.Items[i].SubItems[0].Text.ToUpper() == "COLLECTED")
                 {
-                    result.Items.Add((ListViewItem)raw.Items[i].Clone()); // generating erros
+                    result.Items.Add((ListViewItem)raw.Items[i].Clone());
                 }
             }
-            //MessageBox.Show(result.Items.Count.ToString());
+
             printUsingLView(result);
-            // dispose result
+            result.Dispose(); // speeds up app exit
         }
 
         
