@@ -48,15 +48,8 @@ C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT Record.pdb
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\IBT Record.exe
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\IBT Record.pdb
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT Record.csprojResolveAssemblyReference.cache
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.AddIBTNumForm.resources
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.AddNoteForm.resources
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.DeleteIBT.resources
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.EditForm.resources
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.MainWindow.resources
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.NewIBTForm.resources
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.Properties.Resources.resources
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.RequestedForm.resources
-C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.SubwarehouseForm.resources
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT Record.csproj.GenerateResource.Cache
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Debug\IBT Record.exe.config
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT Record.exe
@@ -69,3 +62,5 @@ D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT_Record.Properties.Resources.resources
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT Record.csproj.GenerateResource.Cache
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT_Record.MainWindow.resources
+C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.xml

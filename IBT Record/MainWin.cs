@@ -66,6 +66,7 @@ namespace IBT_Record
 
                             using(StreamWriter sWrite = new StreamWriter(propertiesFile))
                             {
+                                // change formatting to indented
                                 sWrite.Write(JsonConvert.SerializeObject(c));
                             }
                         }

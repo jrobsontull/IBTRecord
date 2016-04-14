@@ -1,2 +1,60 @@
 <IBTRecord>
+  <IBT>
+    <Status>Collected</Status>
+    <Name>kdkdk</Name>
+    <ContactNumber>kdkdk</ContactNumber>
+    <DateStarted>13/04/2016</DateStarted>
+    <SKU>kdkdk</SKU>
+    <Description>kdkkd</Description>
+    <RequestedFrom>
+    </RequestedFrom>
+    <IBTNumber>
+    </IBTNumber>
+    <IBTChecked>
+    </IBTChecked>
+    <CustomerCalled>
+    </CustomerCalled>
+    <Collected>Collected - 13/04/2016</Collected>
+    <Note>
+    </Note>
+  </IBT>
+  <IBT>
+    <Status>Collected</Status>
+    <Name>lskkd</Name>
+    <ContactNumber>ldkdk</ContactNumber>
+    <DateStarted>13/04/2016</DateStarted>
+    <SKU>kdkdk</SKU>
+    <Description>kdkdk</Description>
+    <RequestedFrom>
+    </RequestedFrom>
+    <IBTNumber>
+    </IBTNumber>
+    <IBTChecked>
+    </IBTChecked>
+    <CustomerCalled>
+    </CustomerCalled>
+    <Collected>Collected - 13/04/2016</Collected>
+    <Note>
+    </Note>
+  </IBT>
+  <IBT>
+    <Status>To IBT</Status>
+    <Name>kssk</Name>
+    <ContactNumber>djdj</ContactNumber>
+    <DateStarted>13/04/2016</DateStarted>
+    <SKU>kdkd</SKU>
+    <Description>kdkkd</Description>
+    <RequestedFrom>
+    </RequestedFrom>
+    <IBTNumber>
+    </IBTNumber>
+    <IBTChecked>
+    </IBTChecked>
+    <CustomerCalled>
+    </CustomerCalled>
+    <Collected>
+    </Collected>
+    <Note>
+    </Note>
+  </IBT>
 </IBTRecord>
