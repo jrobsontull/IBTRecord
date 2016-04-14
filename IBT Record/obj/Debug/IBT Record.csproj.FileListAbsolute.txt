@@ -58,9 +58,9 @@ D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Debug\IBT
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Debug\IBT Record.pdb
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.dll
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.xml
-D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT Record.csprojResolveAssemblyReference.cache
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT_Record.Properties.Resources.resources
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT Record.csproj.GenerateResource.Cache
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT_Record.MainWindow.resources
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.xml
+D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT Record.csprojResolveAssemblyReference.cache

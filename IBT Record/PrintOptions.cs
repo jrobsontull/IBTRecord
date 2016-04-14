@@ -22,19 +22,15 @@ namespace IBT_Record
             raw = rawData;
         }
 
-        // DEEP COPY METHOD - needed for ListViewPrinter
+        // DEEP COPY METHOD - needed for ListViewPrinter - very slow to dispose of clone
         private ListView generateEmptyClone(ListView toClone)
         {
             ListView newCopy = new ListView();
-
-            //foreach (ColumnHeader head in toClone.Columns)
-            //{
-            //    newCopy.Columns.Add((ColumnHeader)head.Clone());
-            //}
-            foreach (var propToClone in toClone.GetType().GetProperties())
+   
+            foreach (var propToClone in toClone.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public))
             {
                 PropertyInfo propInfo = newCopy.GetType().GetProperty(propToClone.Name);
-                if (propInfo.CanWrite)
+                if (propInfo.CanWrite && propInfo.Name != "TopItem") // TopItem causing problems
                     propInfo.SetValue(newCopy, propToClone.GetValue(toClone, null));
             }
 
@@ -56,12 +52,15 @@ namespace IBT_Record
             lPrinter.HeaderFormat.BackgroundColor = Color.White;
             lPrinter.HeaderFormat.TextColor = Color.Black;
             lPrinter.ListGridColor = Color.Gray;
-            lPrinter.PrintWithDialog();
+            //lPrinter.PrintWithDialog();
+            lPrinter.PrintPreview();
         }
 
         private void printCompletedBtn_Click(object sender, EventArgs e)
         {
             ListView result = generateEmptyClone(raw);
+            MessageBox.Show(result.Width.ToString());
+
             result.Items.Clear();
             
             for (int i = 0; i < raw.Items.Count; i++)
@@ -71,8 +70,9 @@ namespace IBT_Record
                     result.Items.Add((ListViewItem)raw.Items[i].Clone()); // generating erros
                 }
             }
-            MessageBox.Show(result.Items.Count.ToString());
-            //printUsingLView(result);
+            //MessageBox.Show(result.Items.Count.ToString());
+            printUsingLView(result);
+            // dispose result
         }
 
         
