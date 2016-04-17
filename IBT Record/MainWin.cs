@@ -330,9 +330,26 @@ namespace IBT_Record
             }
         }
 
+        // DEBUGGING
+        private void propPrinter(string fileLoc, ListView l)
+        {
+            string s = String.Empty;
+            foreach (var prop in l.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public))
+            {
+                if (prop.GetValue(l, null) != null)
+                    s += (prop.Name + " = " + prop.GetValue(l, null).ToString() + Environment.NewLine);
+            }
+            using (StreamWriter sWr = new StreamWriter(fileLoc))
+            {
+                sWr.Write(s);
+            }
+        }
+
         // Print Button
         private void printBtn_Click(object sender, EventArgs e)
         {
+            propPrinter("1.txt", TableDisplay);
+
             using (PrintOptions pOption = new PrintOptions(TableDisplay))
             {
                 pOption.ShowDialog();
@@ -347,7 +364,9 @@ namespace IBT_Record
                 //lPrinter.ListGridColor = Color.Gray;
                 //lPrinter.PrintWithDialog();
             }
-            
+            propPrinter("2.txt", TableDisplay);
+
+            TableDisplay.Select();
         }
 
         // Button Access Control

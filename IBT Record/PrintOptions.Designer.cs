@@ -68,6 +68,7 @@
             this.printUncompleteBtn.TabIndex = 2;
             this.printUncompleteBtn.Text = "Print Uncomplete";
             this.printUncompleteBtn.UseVisualStyleBackColor = true;
+            this.printUncompleteBtn.Click += new System.EventHandler(this.printUncompleteBtn_Click);
             // 
             // dateGroupBox
             // 
@@ -92,6 +93,7 @@
             this.printDateBtn.TabIndex = 4;
             this.printDateBtn.Text = "Print";
             this.printDateBtn.UseVisualStyleBackColor = true;
+            this.printDateBtn.Click += new System.EventHandler(this.printDateBtn_Click);
             // 
             // toLabel
             // 

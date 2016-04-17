@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
-//using System.IO;
 
 namespace IBT_Record
 {
@@ -21,6 +20,22 @@ namespace IBT_Record
             InitializeComponent();
 
             raw = rawData;
+
+            fromDate.Value = toDate.Value = DateTime.Now;
+        }
+
+        private void printUsingLView(ListView toPrint)
+        {
+            ListViewPrinter lPrinter = new ListViewPrinter();
+            lPrinter.ListView = toPrint;
+            // Formatting
+            lPrinter.DefaultPageSettings.Landscape = true;
+            lPrinter.Header = "IBT Record - " + DateTime.Now.ToShortDateString();
+            lPrinter.HeaderFormat.BackgroundColor = Color.White;
+            lPrinter.HeaderFormat.TextColor = Color.Black;
+            lPrinter.ListGridColor = Color.Gray;
+            //lPrinter.PrintWithDialog(); - introduce print dialog tick
+            lPrinter.PrintPreview();
         }
 
         // DEEP COPY METHOD - needed for ListViewPrinter
@@ -43,38 +58,9 @@ namespace IBT_Record
             return newCopy;
         }
 
-        // DEBUGGING
-        //private void propPrinter(string fileLoc, ListView l)
-        //{
-        //    string s = String.Empty;
-        //    foreach (var prop in l.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public))
-        //    {
-        //        if (prop.GetValue(l, null) != null)
-        //            s += (prop.Name + " = " + prop.GetValue(l, null).ToString() + Environment.NewLine);
-        //    }
-        //    using (StreamWriter sWr = new StreamWriter(fileLoc))
-        //    {
-        //        sWr.Write(s);
-        //    }
-        //}
-
         private void printAllBtn_Click(object sender, EventArgs e)
         {
             printUsingLView(raw);
-        }
-
-        private void printUsingLView(ListView toPrint)
-        {
-            ListViewPrinter lPrinter = new ListViewPrinter();
-            lPrinter.ListView = toPrint;
-            // Formatting
-            lPrinter.DefaultPageSettings.Landscape = true;
-            lPrinter.Header = "IBT Record - " + DateTime.Now.ToShortDateString();
-            lPrinter.HeaderFormat.BackgroundColor = Color.White;
-            lPrinter.HeaderFormat.TextColor = Color.Black;
-            lPrinter.ListGridColor = Color.Gray;
-            //lPrinter.PrintWithDialog(); - introduce print dialog tick
-            lPrinter.PrintPreview();
         }
 
         private void printCompletedBtn_Click(object sender, EventArgs e)
@@ -91,6 +77,46 @@ namespace IBT_Record
 
             printUsingLView(result);
             result.Dispose(); // speeds up app exit
+        }
+
+        private void printUncompleteBtn_Click(object sender, EventArgs e)
+        {
+            ListView result = generateEmptyClone(raw);
+
+            for (int i = 0; i < raw.Items.Count; i++)
+            {
+                if (raw.Items[i].SubItems[0].Text.ToUpper() != "COLLECTED")
+                {
+                    result.Items.Add((ListViewItem)raw.Items[i].Clone());
+                }
+            }
+
+            printUsingLView(result);
+            result.Dispose(); // speeds up app exit
+        }
+
+        private void printDateBtn_Click(object sender, EventArgs e)
+        {
+            if (fromDate.Value <= toDate.Value)
+            {
+                ListView result = generateEmptyClone(raw);
+
+                for (int i = 0; i < raw.Items.Count; i++)
+                {
+                    if (DateTime.Parse(raw.Items[i].SubItems[3].Text).Date >= fromDate.Value.Date
+                        && DateTime.Parse(raw.Items[i].SubItems[3].Text).Date <= toDate.Value.Date)
+                    {
+                        result.Items.Add((ListViewItem)raw.Items[i].Clone());
+                    }
+                }
+
+                printUsingLView(result);
+                result.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("The from date must before or equal to the to date.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         
