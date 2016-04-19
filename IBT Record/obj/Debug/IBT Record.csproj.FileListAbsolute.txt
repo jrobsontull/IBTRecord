@@ -65,3 +65,4 @@ C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.dl
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Debug\Newtonsoft.Json.xml
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT Record.csprojResolveAssemblyReference.cache
 D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\obj\Debug\IBT_Record.PrintOptions.resources
+C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Debug\IBT_Record.PrintOptions.resources

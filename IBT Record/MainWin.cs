@@ -25,9 +25,9 @@ namespace IBT_Record
         // GLOBALS
         string fileLocation = AppDomain.CurrentDomain.BaseDirectory + "Database_IBT.xml";
         string propertiesFile = AppDomain.CurrentDomain.BaseDirectory + "properties.json";
-        config c = new config();
+        Config c = new Config();
         
-        public class config
+        public class Config
         {
             public int storeNumber { get; set; }
             public string setUpBy { get; set; }
@@ -47,7 +47,7 @@ namespace IBT_Record
                     // Read properties
                     using (StreamReader sRead = new StreamReader(propertiesFile))
                     {
-                        c = JsonConvert.DeserializeObject<config>(sRead.ReadToEnd());
+                        c = JsonConvert.DeserializeObject<Config>(sRead.ReadToEnd());
                     }
                 }
                 else
@@ -330,43 +330,13 @@ namespace IBT_Record
             }
         }
 
-        // DEBUGGING
-        private void propPrinter(string fileLoc, ListView l)
-        {
-            string s = String.Empty;
-            foreach (var prop in l.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public))
-            {
-                if (prop.GetValue(l, null) != null)
-                    s += (prop.Name + " = " + prop.GetValue(l, null).ToString() + Environment.NewLine);
-            }
-            using (StreamWriter sWr = new StreamWriter(fileLoc))
-            {
-                sWr.Write(s);
-            }
-        }
-
         // Print Button
         private void printBtn_Click(object sender, EventArgs e)
         {
-            propPrinter("1.txt", TableDisplay);
-
-            using (PrintOptions pOption = new PrintOptions(TableDisplay))
+            using (PrintOptions pOption = new PrintOptions(TableDisplay, c))
             {
                 pOption.ShowDialog();
-
-                //ListViewPrinter lPrinter = new ListViewPrinter();
-                //lPrinter.ListView = TableDisplay;
-                //// Formatting
-                //lPrinter.DefaultPageSettings.Landscape = true;
-                //lPrinter.Header = "IBT Record - " + DateTime.Now.ToShortDateString();
-                //lPrinter.HeaderFormat.BackgroundColor = Color.White;
-                //lPrinter.HeaderFormat.TextColor = Color.Black;
-                //lPrinter.ListGridColor = Color.Gray;
-                //lPrinter.PrintWithDialog();
             }
-            propPrinter("2.txt", TableDisplay);
-
-            TableDisplay.Select();
         }
 
         // Button Access Control
