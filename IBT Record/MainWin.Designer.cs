@@ -50,13 +50,15 @@
             this.subwarehouseBtn = new System.Windows.Forms.Button();
             this.manageLabel = new System.Windows.Forms.Label();
             this.printBtn = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.deleteIBTBtn = new System.Windows.Forms.Button();
             this.addNoteBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TableDisplay
             // 
+            this.TableDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TableDisplay.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.statusHeader,
             this.nameHeader,
@@ -263,17 +265,6 @@
             this.printBtn.UseVisualStyleBackColor = true;
             this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(15, -5);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
-            this.menuStrip1.TabIndex = 12;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // deleteIBTBtn
             // 
             this.deleteIBTBtn.Enabled = false;
@@ -318,14 +309,12 @@
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.newIBTBtn);
             this.Controls.Add(this.TableDisplay);
-            this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1118, 677);
             this.Name = "MainWindow";
             this.Text = "IBT Record";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -355,7 +344,6 @@
         private System.Windows.Forms.Label manageLabel;
         private System.Windows.Forms.ColumnHeader dateHeader;
         private System.Windows.Forms.Button printBtn;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Button deleteIBTBtn;
         private System.Windows.Forms.Button addNoteBtn;
     }

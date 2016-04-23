@@ -528,10 +528,6 @@ namespace IBT_Record
                     TableDisplay.Select();
                 }
             }
-        }
-
-        
-
-        
+        }     
     }
 }

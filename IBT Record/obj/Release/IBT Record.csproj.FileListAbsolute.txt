@@ -53,3 +53,15 @@ D:\Jake\Documents\Visual Studio 2013\Projects\IBTRecord\IBT Record\bin\Release\N
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\Newtonsoft.Json.dll
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\Newtonsoft.Json.xml
 C:\Users\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT_Record.PrintOptions.resources
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\IBT Record.exe.config
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT Record.exe
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT Record.pdb
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\IBT Record.exe
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\IBT Record.pdb
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\Newtonsoft.Json.dll
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\bin\Release\Newtonsoft.Json.xml
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT Record.csprojResolveAssemblyReference.cache
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT_Record.MainWindow.resources
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT_Record.PrintOptions.resources
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT_Record.Properties.Resources.resources
+D:\Jake\Documents\GitHub\IBTRecord\IBT Record\obj\Release\IBT Record.csproj.GenerateResource.Cache
